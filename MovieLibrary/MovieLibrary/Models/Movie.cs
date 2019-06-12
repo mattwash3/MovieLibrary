@@ -18,8 +18,5 @@ namespace MovieLibrary.Models
         public string DirectorName { get; set; }
         [Display(Name = "Movie Image")]
         public string MovieImage { get; set; }
-
-
-
     }
 }

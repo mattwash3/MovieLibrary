@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "aec6ca61-a917-413b-aa4c-a3488a8a4881",
+		"name": "Movie API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL MOVIE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44365/api/movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44365/api/movies/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 7,\n    \"Title\": \"First Sunday\",\n    \"Genre\": \"Comedy\",\n    \"DirectorName\": \"David Talbert\",\n    \"MovieImage\": null\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44365/api/movies/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"movies",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 1,\n    \"Title\": \"The Departed\",\n    \"Genre\": \"Drama\",\n    \"DirectorName\": \"Martin Scorsese\",\n    \"MovieImage\": null\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44365/api/movies/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

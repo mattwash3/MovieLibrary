@@ -6,7 +6,7 @@ using System.Web.Http.Filters;
 
 namespace MovieLibrary.Core
 {
-    public class AllowCrossSiteAttribute :
+    public class AllowCrossSite :
         System.Web.Http.Filters.ActionFilterAttribute
     {
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
