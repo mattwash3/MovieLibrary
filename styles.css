@@ -1,0 +1,146 @@
+#allText{
+	text-align: center;
+	padding: 15px;
+   font-family: sans-serif;
+}
+
+.navBar{
+	text-align: center;
+}
+
+body{
+   background-image: url("images/dark.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: 100%;
+}
+
+h1{
+   color: white;
+}
+
+h2,h3,h4{
+	color: greenyellow
+}
+
+a:visited{
+   color: yellow;
+}
+
+a:hover{
+   color: lightgreen;
+}
+
+a:link{
+   color: greenyellow;
+}
+.bluebutton1{
+   position: absolute;
+   border: 2px solid: white;
+   background-color: blue;
+   border-radius: 40px;
+   padding-top: 7px;
+   display:block;
+}
+
+.bluebutton:hover{
+   background-color: black;
+}
+
+.link{
+   padding: 20px;
+}
+
+li{
+	color: greenyellow;
+}
+
+p{
+	color: greenyellow;
+}
+
+.col-sm-2{
+	text-align: center;
+}
+
+.col-sm-3{
+	text-align: center;
+}
+
+.col-sm-6{
+	text-align: center;
+}
+
+.col-sm-8{
+	text-align: center;
+}
+
+.col-md-2{
+	text-align: center;
+}
+
+.col-md-3{
+	text-align: center;
+}
+
+.col-md-6{
+	text-align: center;
+}
+
+.col-md-8{
+	text-align: center;
+}
+
+.col-lg-2{
+	text-align: center;
+}
+
+.col-lg-3{
+	text-align: center;
+}
+
+.col-lg-6{
+	text-align: center;
+}
+
+.col-lg-8{
+	text-align: center;
+}
+
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+.previous {
+	background-color: grey;
+	color: black;
+}
+
+.next {
+	background-color: grey;
+	color: white;
+}
+
+.profile{
+	image-orientation: 0grad;
+}
+
