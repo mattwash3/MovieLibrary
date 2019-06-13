@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>devCodeCamp &middot; Movie Library</title>
-  </head>
-  <body>
-    <button onclick="app(data)">Search Movies</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Library</title>
     <script src="movieLibrary.js"></script>
-    <script src="styles.css"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div id="root"></div>
+
+    <button id="diplayAllMovies" onclick="displayAllMovies()">Search Movies</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Director Name</th>
+            </tr>
+        </thead>
+        <tbody class="tableBody"></tbody>
+    </table>
+    <form id="postMovie">
+        <input type="text" id="title" name="title" placeholder="Movie Name" />
+        <input type="text" id="genre" name="genre" placeholder="Movie Genre" />
+        <input type="text" id="directorName" name="directorName" placeholder="Director's Name" /><br>
+        <button id="postMovieButton" onclick="postMovie()">Add Movie</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
 </html>

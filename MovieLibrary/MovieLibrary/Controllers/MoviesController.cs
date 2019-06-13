@@ -75,12 +75,13 @@ namespace MovieLibrary.Controllers
 
         // POST: api/Movies
         [ResponseType(typeof(Movie))]
+        [HttpPost]
         public IHttpActionResult Post(Movie movie)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             db.Movies.Add(movie);
             db.SaveChanges();
