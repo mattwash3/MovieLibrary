@@ -78,11 +78,6 @@ namespace MovieLibrary.Controllers
         [HttpPost]
         public IHttpActionResult Post(Movie movie)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
-
             db.Movies.Add(movie);
             db.SaveChanges();
 

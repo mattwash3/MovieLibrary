@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
 </head>
-
-
 <body>
     <div id="root"></div>
-
-    <button id="diplayAllMovies" onclick="displayAllMovies()">Search Movies</button>
-
+    <button id="diplayAllMovies" onclick="displayAllMovies()">Display Movies</button>
     <table>
         <thead>
             <tr>
@@ -27,13 +22,16 @@
         <tbody class="tableBody"></tbody>
     </table>
     <form id="postMovie">
+        <button id="postMovieButton" onclick="postMovie()">Add Movie</button><br>
         <input type="text" id="title" name="title" placeholder="Movie Name" />
         <input type="text" id="genre" name="genre" placeholder="Movie Genre" />
-        <input type="text" id="directorName" name="directorName" placeholder="Director's Name" /><br>
-        <button id="postMovieButton" onclick="postMovie()">Add Movie</button>
+        <input type="text" id="directorName" name="directorName" placeholder="Director's Name" /><br>    
     </form>
+
+            <button id="searchMoviesLibrary" onclick="searchMovies()">Search Movies</button><br>
+            <input type="text" id="search" name="search" placeholder="Search Library" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
-
 </html>
